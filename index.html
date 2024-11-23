@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <div id="scoreboard-container">
+            
+            <div id="home-side">
+                <p id="score-leader-home"></p>
+                
+                <h1>HOME</h1>
+                <div class="home-guest-underline"></div>
+                
+                <div class="points-fouls-sections">
+                    <h2>Points</h2>
+                    <h2 id="home-points">0</h2>
+                </div>
+                
+                <button type="button" onclick="homePlusOneBtn()" class="buttons-to-disable">+1</button>
+                <button type="button" onclick="homePlusTwoBtn()" class="buttons-to-disable">+2</button>
+                <button type="button" onclick="homePlusThreeBtn()" class="buttons-to-disable">+3</button>
+                
+                <div class="points-fouls-sections">
+                    <h2>Fouls</h2>
+                    <h2 id="home-fouls">0</h2>
+                </div>
+                
+                <button type="button" onclick="addHomeFoulBtn()" class="buttons-to-disable">+1</button>
+            </div>
+            
+            <div id="new-game-section">
+                <button type="button" onclick="newGameBtn()" id="new-game-btn">New Game</button>
+            </div>
+            
+            <div id="guest-side">
+                <p id="score-leader-guest"></p>
+                
+                <h1>GUEST</h1> 
+                <div class="home-guest-underline"></div>
+                
+                <div class="points-fouls-sections"> 
+                    <h2>Points</h2>
+                    <h2 id="guest-points">0</h2> 
+                </div>
+                
+                <button type="button" onclick="guestPlusOneBtn()" class="buttons-to-disable">+1</button>
+                <button type="button" onclick="guestPlusTwoBtn()" class="buttons-to-disable">+2</button>
+                <button type="button" onclick="guestPlusThreeBtn()" class="buttons-to-disable">+3</button>
+                
+                <div class="points-fouls-sections">  
+                    <h2>Fouls</h2>
+                    <h2 id="guest-fouls">0</h2>
+                </div>
+                
+                <button type="button" onclick="addGuestFoulBtn()" class="buttons-to-disable">+1</button>
+            </div>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+    
+</html>

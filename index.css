@@ -1,0 +1,169 @@
+.disabled-btn {
+    pointer-events: none; /* Не позволява натискане на бутоните */
+    opacity: 0.10; /* Правиш ги прозрачни */
+}
+
+@font-face {
+    font-family: 'CursedTimer';
+    src: url(fonts/CursedTimerUlil-Aznm.ttf);
+
+}
+
+@font-face {
+    font-family: 'OctinSports';
+    src: url(fonts/octin\ sports\ rg.otf);
+    
+}
+
+body {
+    background-image: url(image/basketball-court.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'OctinSports', 'sans-serif';
+}
+
+#scoreboard-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #122c4f;
+    color: #fcfaf8;
+    width: 800px;
+    padding: 15px 50px 30px 50px;
+    border: 20px groove #010101;
+    
+}
+
+#score-leader-home {
+    font-size: 30px;
+    text-shadow: 0 0 10px #fcfaf8;
+    margin: 15px;
+}
+
+#score-leader-guest {
+    font-size: 30px;
+    text-shadow: 0 0 10px #fcfaf8;
+    margin: 15px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.home-guest-underline {
+    border-bottom: 3px double #f9a319;
+}
+
+.points-fouls-sections {
+    border: 3px double #f9a319;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #010101;
+    color: #fcfaf8;
+}
+
+#home-points {
+    font-size: 30px;
+    margin-top: 0;
+    color: #f9a319;
+    font-family: 'CursedTimer', 'sans-serif';
+}
+
+#guest-points {
+    font-size: 30px;
+    margin-top: 0;
+    color: #f9a319;
+    font-family: 'CursedTimer', 'sans-serif';
+}
+
+#home-fouls {
+    font-size: 30px;
+    margin-top: 0;
+    color: #f9a319;
+    font-family: 'CursedTimer', 'sans-serif';
+}
+
+#guest-fouls {
+    font-size: 30px;
+    margin-top: 0;
+    color: #f9a319;
+    font-family: 'CursedTimer', 'sans-serif';
+}
+
+.buttons-to-disable {
+    border: 3px double #f9a319;
+    border-radius: 5px;
+    background-color: #010101;
+    color: #fcfaf8;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 13px;
+    margin: 5px;
+    font-family: 'CursedTimer', 'sans-serif';
+}
+
+.buttons-to-disable:hover {
+    border: 3px double #010101;
+    cursor: pointer;
+}
+
+#new-game-btn {
+    border: 3px double #f9a319;
+    border-radius: 5px;
+    background-color: #010101;
+    color: #fcfaf8;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 65px 30px 0 30px;
+    font-family: 'OctinSports', 'sans-serif';
+}
+
+#new-game-btn:hover {
+    border: 3px double #010101;
+    cursor: pointer;
+}
+
+/* За мобилни устройства с ширина до 768px */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        padding: 0 10px; 
+    }
+
+    #scoreboard-container {
+        width: 100%; 
+        padding: 10px 20px; 
+    }
+
+    h1 {
+        font-size: 6vw; 
+    }
+
+    #score-leader-home,
+    #score-leader-guest {
+        font-size: 5vw;
+    }
+
+    #new-game-btn {
+        width: 100%;
+        padding: 10px 0; 
+        font-size: 18px; 
+        text-align: center;
+    }
+
+    .buttons-to-disable, 
+    #new-game-btn {
+        font-size: 18px; 
+        padding: 10px 15px;
+        width: 80px;
+    }
+}
