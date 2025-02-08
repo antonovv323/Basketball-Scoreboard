@@ -27,6 +27,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'OctinSports', 'sans-serif';
+    touch-action: manipulation;
 }
 
 #scoreboard-container {
